@@ -1,6 +1,6 @@
 - serBot 주행
 - blynk 연결을 통해 수동 제어
-
+- 움직일 때 현재 속도 표시
 
 <img src = "https://user-images.githubusercontent.com/81665497/123360566-7e975100-d5a8-11eb-8d16-df4d4521dc5d.jpg" width=420 height=640>
 
@@ -87,7 +87,7 @@ def candy(n):
 
 
 
-@blynk.VIRTUAL_WRITE(5)             # 자율주행-수동조작 전환 # 현재 안됨
+@blynk.VIRTUAL_WRITE(5)             # 자율주행-수동조작 전환 ## 현재 안됨
 def auto_button(n):
     global auto
 
@@ -113,7 +113,7 @@ def joystick2(n):
     y_pos = int(n[0])-512
     move()
 
-@blynk.VIRTUAL_READ(8)              # 속력 표시
+@blynk.VIRTUAL_READ(8)              # 현재 속력 표시함
 def guage():
     blynk.virtual_write(8,int(speed))
 
