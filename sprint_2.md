@@ -22,13 +22,13 @@ import math
 
 # 10.10.13.202
 
-tts = gTTS("b", lang='en')
+tts = gTTS("b", lang='en') # 영어
 tts.save("candy.mp3")
 
-tts = gTTS("감사합니다", lang='ko')
+tts = gTTS("감사합니다", lang='ko') # 한국 성우
 tts.save("thanks.mp3")
 
-tts = gTTS("빵빵", lang='ja')
+tts = gTTS("빵빵", lang='ja') # 일본 성우
 tts.save("horn.mp3")
 
 
@@ -115,7 +115,7 @@ def joystick2(n):
     y_pos = int(n[0])-512
     move()
 
-@blynk.VIRTUAL_READ(8)              # 현재 속력 표시함
+@blynk.VIRTUAL_READ(8)              # 현재 속력 표시
 def guage():
     blynk.virtual_write(8,int(speed))
 
