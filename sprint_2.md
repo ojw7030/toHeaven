@@ -1,3 +1,7 @@
+<img src = "https://user-images.githubusercontent.com/81665497/123360566-7e975100-d5a8-11eb-8d16-df4d4521dc5d.jpg" width=380 height=630>
+
+####
+
 import multiprocessing as mp
 import BlynkLib
 from pop import Pilot, LiDAR
@@ -6,6 +10,9 @@ import subprocess
 import random
 import time
 import math
+
+
+
 
 # 10.10.13.202
 
