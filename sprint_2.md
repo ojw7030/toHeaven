@@ -1,7 +1,8 @@
 - serBot 주행
 - blynk 연결을 통해 수동 제어
+- 조이스틱(4방향), 방향전환(좌 우), 음성기능
 - 움직일 때 현재 속도 표시
-- 자율/수동 제어 ### 제외
+- 자율/수동 제어 버튼 -> 제외
 
 <img src = "https://user-images.githubusercontent.com/81665497/123360566-7e975100-d5a8-11eb-8d16-df4d4521dc5d.jpg" width=420 height=640>
 
