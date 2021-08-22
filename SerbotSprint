@@ -21,8 +21,8 @@ tts.save("horn.mp3")
 
 
 
-BLYNK_AUTH = 's2G4qA7eB4rTA7QAb8TeHr9Qbd7qRsYU'
-blynk = BlynkLib.Blynk(BLYNK_AUTH)  # server = '10.10.11.57, port=9443
+BLYNK_AUTH = 's2G4qA7eB4rTA7QAb8TeHr9Qbd7qRsYU' # 블링크 연결
+blynk = BlynkLib.Blynk(BLYNK_AUTH)  # server = '10.10.11.57, port=9443 
 
 x_pos = 0
 y_pos = 0
