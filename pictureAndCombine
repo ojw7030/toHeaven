@@ -134,11 +134,11 @@ class MainWindow(QMainWindow):
 
 if __name__ == '__main__':
     click = 0 # 0 초기값, -1 끝내기, 1 사진찍기
-    
+    app = QApplication(sys.argv)
     while True:
         click = int(input("1 : 사진찍기, -1 : 끝내기 => "))
         if click == 1: # 사진찍기
-            #app = QApplication(sys.argv)
+            
             mainWindow = MainWindow()
             click = 0
             
@@ -147,5 +147,6 @@ if __name__ == '__main__':
             
         else:
             print("Error")
-    #mainWindow.showFullScreen()
+    #mainWindow.showFullScreen() # 전체화면 생략
     sys.exit(app.exec_())
+    print("프로그램 종료")
